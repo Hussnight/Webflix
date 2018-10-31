@@ -1,3 +1,9 @@
+<?php $query = $db->query('SELECT * FROM category');
+$categories = $query->fetchAll();
+
+$query = $db->query('SELECT * FROM movie');
+$movies = $query->fetchAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +25,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="">Accueil</a>
+        <a class="nav-link" href="index.php">Accueil</a>
       </li>
       <li class="nav-item active">
         <a class="nav-link" href="formulaire.php">Ajouter un film</a>

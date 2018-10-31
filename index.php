@@ -1,6 +1,9 @@
-<?php // Inclusion de header.php sur la page
-require_once(__DIR__.'/partials/header.php'); ?>
-<?php require_once(__DIR__.'/config/database.php') ?>
+<?php
+// Inclusion de header.php sur la page
+require_once(__DIR__.'/config/database.php');
+require_once(__DIR__.'/partials/header.php');
+
+?>
 
 
 <main>
@@ -10,23 +13,26 @@ require_once(__DIR__.'/partials/header.php'); ?>
 </main>
 
 <section>
-<h2 class="category-style">Catégories <br><br> <?php  
+<h2 class="category-style">Catégories</h2> <br><br> <?php  
 foreach($categories as $categorie){
-      echo $categorie['name'].'<br>';
+      echo '<h3 style="margin-left: 30px; font-size: 20px ; color: red; ">'.$categorie['name'].'</h3>'.'<br>';
 
       foreach($movies as $movie){
         if ($movie['category_id'] === $categorie['id'])
-           echo '<div class="col-md-3">
-                    <div class="card mb-4">
-                    <div class="card-img-top-container">
-                      <img class="card-img-top card-img-top-zoom-effect" src="assets/'.$movie['cover'].'"alt="Card image cap">
-                </div>
-                    </div>
-                    </div>';
-      }
-    }
+           echo '
+           <div class="global">
+           <div class="text-center"><a href="movie_single.php?id='.$movie['id'].'"><img class="img-taille card-img-top card-img-top-zoom-effect" src="assets/'.$movie['cover'].'"alt="Card image cap"><br> </a></div>
+            
+           
+           </div>';
+          }echo '<br>'.'<br>'.'<br>';             
+                    
+        }
+                
+       
+                  
 
-?></h2>
+?>
 </section>
 
 

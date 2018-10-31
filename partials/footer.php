@@ -1,4 +1,14 @@
-
+<footer>
+    <div class="footer">
+        <ul>
+            <li class="li-footer">Webflix <br> <span class="copy">&copy2018<span></li>
+            <li class="li-footer">Comédie</li>
+            <li class="li-footer">Action</li>
+            <li class="li-footer">Science-fiction</li>
+            <li class="li-footer">Documentaire</li>
+        </ul>
+    </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

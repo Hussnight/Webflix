@@ -1,4 +1,5 @@
 <?php // Inclusion de header.php sur la page
+require_once(__DIR__.'/config/database.php');
 require_once(__DIR__.'/partials/header.php'); ?>
 
 <main>
