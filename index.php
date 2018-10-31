@@ -15,7 +15,7 @@ require_once(__DIR__.'/partials/header.php');
 <section>
 <h2 class="category-style">Catégories</h2> <br><br> <?php  
 foreach($categories as $categorie){
-      echo '<h3 style="margin-left: 30px; font-size: 20px ; color: red; ">'.$categorie['name'].'</h3>'.'<br>';
+      echo '<h3 style="margin-left: 30px; font-size: 20px ; color: lightgrey; ">'.$categorie['name'].'</h3>'.'<br>';
 
       foreach($movies as $movie){
         if ($movie['category_id'] === $categorie['id'])
